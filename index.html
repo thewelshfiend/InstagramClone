@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>InstaClone</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+	<script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+		crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+		integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="icon" href="./Images/fav_icon.svg" type="jpg" />
+	<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+	<main class="d-flex align-items-start">
+		<nav class="pb-3 border-end">
+			<img src="./Images/Instagram.jpg" title="Instagram" />
+			<ul class="nav flex-column fs-6">
+				<li class="nav-item">
+					<a class="nav-link p-0 ps-3 text-dark" href="#"><strong><svg width="40px" height="40px"
+								viewBox="-12.16 -12.16 56.32 56.32" fill="none" xmlns="http://www.w3.org/2000/svg"
+								transform="rotate(0)">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+								<g id="SVGRepo_iconCarrier">
+									<path
+										d="M0 28.8496C0 30.5896 1.41049 32 3.15041 32H25.2032C26.9432 32 28.3537 30.5896 28.3537 28.8496V13.0282C28.3537 12.1326 27.9725 11.2793 27.3054 10.6817L16.2789 0.803877C15.0825 -0.267959 13.2712 -0.267959 12.0747 0.803877L1.0483 10.6817C0.381205 11.2793 0 12.1326 0 13.0282V28.8496Z"
+										fill="url(#paint0_linear_103_1796)"></path>
+									<path
+										d="M9.45122 32H18.9024V20.9736C18.9024 20.1036 18.1972 19.3984 17.3272 19.3984H11.0264C10.1565 19.3984 9.45122 20.1036 9.45122 20.9736V32Z"
+										fill="white" fill-opacity="0.48"></path>
+									<defs>
+										<linearGradient id="paint0_linear_103_1796" x1="14.1768" y1="32" x2="14.1768"
+											y2="0" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#000000"></stop>
+											<stop offset="1" stop-color="#000000"></stop>
+										</linearGradient>
+									</defs>
+								</g>
+							</svg>Home</strong></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link p-0 ps-3 text-dark" href="#"><svg width="40px" height="40px"
+							viewBox="-7.44 -7.44 38.88 38.88" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+							<g id="SVGRepo_iconCarrier">
+								<g clip-path="url(#clip0_15_152)">
+									<rect width="24" height="24" fill="white"></rect>
+									<circle cx="10.5" cy="10.5" r="6.5" stroke="#000000" stroke-linejoin="round">
+									</circle>
+									<path
+										d="M19.6464 20.3536C19.8417 20.5488 20.1583 20.5488 20.3536 20.3536C20.5488 20.1583 20.5488 19.8417 20.3536 19.6464L19.6464 20.3536ZM20.3536 19.6464L15.3536 14.6464L14.6464 15.3536L19.6464 20.3536L20.3536 19.6464Z"
+										fill="#000000"></path>
+								</g>
+								<defs>
+									<clipPath id="clip0_15_152">
+										<rect width="24" height="24" fill="white"></rect>
+									</clipPath>
+								</defs>
+							</g>
+						</svg>Search</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link p-0 ps-3 text-dark" href="#"><svg fill="#000000" width="40px" height="40px"
+							viewBox="-8 -8 32.00 32.00" id="compass-16px" xmlns="http://www.w3.org/2000/svg"
+							transform="matrix(-1, 0, 0, -1, 0, 0)">
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+								stroke="#CCCCCC" stroke-width="1.952"></g>
+							<g id="SVGRepo_iconCarrier">
+								<path id="Path_132" data-name="Path 132"
+									d="M28,0a8,8,0,1,0,8,8A8.009,8.009,0,0,0,28,0Zm0,15a7,7,0,1,1,7-7A7.008,7.008,0,0,1,28,15ZM31.314,4.036l-5,2a.47.47,0,0,0-.064.046.448.448,0,0,0-.1.071.425.425,0,0,0-.072.1c-.013.022-.035.037-.045.061l-2,5a.5.5,0,0,0,.65.65l5-2a.47.47,0,0,0,.064-.046.448.448,0,0,0,.1-.071.425.425,0,0,0,.072-.1c.013-.022.035-.037.045-.061l2-5a.5.5,0,0,0-.65-.65ZM25.4,10.6,26.683,7.39,28.61,9.317Z"
+									transform="translate(-20)"></path>
+							</g>
+						</svg>Explore</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link p-0 ps-3 text-dark" href="#"><svg width="40px" height="40px"
+							viewBox="-10.56 -10.56 45.12 45.12" fill="none" xmlns="http://www.w3.org/2000/svg"
+							transform="rotate(0)">
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+							<g id="SVGRepo_iconCarrier">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M11.9426 1.25H12.0574C14.3658 1.24999 16.1748 1.24998 17.5863 1.43975C19.031 1.63399 20.1711 2.03933 21.0659 2.93414C21.9607 3.82895 22.366 4.96897 22.5603 6.41371C22.75 7.82519 22.75 9.63423 22.75 11.9426V12.0574C22.75 14.3658 22.75 16.1748 22.5603 17.5863C22.366 19.031 21.9607 20.1711 21.0659 21.0659C20.1711 21.9607 19.031 22.366 17.5863 22.5603C16.1748 22.75 14.3658 22.75 12.0574 22.75H11.9426C9.63423 22.75 7.82519 22.75 6.41371 22.5603C4.96897 22.366 3.82895 21.9607 2.93414 21.0659C2.03933 20.1711 1.63399 19.031 1.43975 17.5863C1.24998 16.1748 1.24999 14.3658 1.25 12.0574V11.9426C1.24999 9.63423 1.24998 7.82519 1.43975 6.41371C1.63399 4.96897 2.03933 3.82895 2.93414 2.93414C3.82895 2.03933 4.96897 1.63399 6.41371 1.43975C7.82519 1.24998 9.63423 1.24999 11.9426 1.25ZM6.61358 2.92637C5.33517 3.09825 4.56445 3.42514 3.9948 3.9948C3.42514 4.56445 3.09825 5.33517 2.92637 6.61358C2.89922 6.81554 2.87624 7.02735 2.85681 7.25H6.58829L9.44439 2.76185C8.31691 2.77915 7.39205 2.82171 6.61358 2.92637ZM11.2072 2.75032C11.1886 2.80268 11.1638 2.85379 11.1327 2.90266L8.36626 7.25H13.0883L15.9189 2.80191C14.8557 2.7507 13.5747 2.75 12 2.75C11.727 2.75 11.4629 2.75002 11.2072 2.75032ZM17.5982 2.95698L14.8663 7.25H21.1432C21.1238 7.02735 21.1008 6.81554 21.0736 6.61358C20.9018 5.33517 20.5749 4.56445 20.0052 3.9948C19.4677 3.45731 18.7512 3.13594 17.5982 2.95698ZM21.2233 8.75H13.5112C13.5033 8.75013 13.4953 8.75013 13.4874 8.75H7.01122C7.00327 8.75013 6.99532 8.75013 6.98737 8.75H2.77672C2.75045 9.67173 2.75 10.7422 2.75 12C2.75 14.3782 2.75159 16.0864 2.92637 17.3864C3.09825 18.6648 3.42514 19.4355 3.9948 20.0052C4.56445 20.5749 5.33517 20.9018 6.61358 21.0736C7.91356 21.2484 9.62178 21.25 12 21.25C14.3782 21.25 16.0864 21.2484 17.3864 21.0736C18.6648 20.9018 19.4355 20.5749 20.0052 20.0052C20.5749 19.4355 20.9018 18.6648 21.0736 17.3864C21.2484 16.0864 21.25 14.3782 21.25 12C21.25 10.7422 21.2496 9.67173 21.2233 8.75ZM13.3682 11.9212L13.4699 11.9868C14.0897 12.3866 14.6263 12.7328 15.0004 13.0636C15.3983 13.4156 15.75 13.8686 15.75 14.5C15.75 15.1314 15.3983 15.5844 15.0004 15.9364C14.6263 16.2671 14.0897 16.6133 13.4699 17.0132L13.3682 17.0788C12.7421 17.4828 12.1979 17.834 11.7459 18.0347C11.2756 18.2435 10.673 18.394 10.0982 18.0289C9.55356 17.6828 9.38842 17.0922 9.31912 16.5722C9.24994 16.053 9.24996 15.3674 9.25 14.5549V14.4451C9.24996 13.6326 9.24994 12.947 9.31912 12.4278C9.38842 11.9078 9.55356 11.3172 10.0982 10.9711C10.673 10.606 11.2756 10.7565 11.7459 10.9653C12.1979 11.166 12.7421 11.5172 13.3682 11.9212ZM10.8579 12.2517C10.8573 12.2509 10.862 12.2496 10.8737 12.2504C10.8644 12.2529 10.8585 12.2525 10.8579 12.2517ZM10.8971 12.2532C10.9373 12.2601 11.0119 12.2806 11.1372 12.3362C11.4688 12.4834 11.9134 12.7677 12.6073 13.2154C13.2907 13.6564 13.7285 13.9413 14.0066 14.1873C14.2627 14.4137 14.251 14.4932 14.25 14.4996C14.251 14.5061 14.2627 14.5863 14.0066 14.8127C13.7285 15.0587 13.2907 15.3436 12.6073 15.7846C11.9134 16.2323 11.4688 16.5166 11.1372 16.6638C11.0119 16.7194 10.9373 16.7399 10.8971 16.7468C10.8749 16.704 10.8362 16.6006 10.806 16.3741C10.7516 15.9662 10.75 15.3821 10.75 14.5C10.75 13.6179 10.7516 13.0338 10.806 12.6259C10.8362 12.3994 10.8749 12.296 10.8971 12.2532ZM10.8579 16.7483C10.8585 16.7475 10.8644 16.7472 10.8737 16.7496C10.862 16.7504 10.8573 16.7491 10.8579 16.7483ZM10.9101 16.7682C10.9135 16.7711 10.915 16.7731 10.9149 16.7733C10.9148 16.7736 10.9131 16.7722 10.9101 16.7682ZM10.9101 12.2318C10.9131 12.2278 10.9148 12.2264 10.9149 12.2267C10.915 12.2269 10.9135 12.2289 10.9101 12.2318Z"
+									fill="#000000"></path>
+							</g>
+						</svg>Reels</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link p-0 ps-3 text-dark" href="#">
+						<?xml version="1.0" ?><svg width="40px" height="40px" class="py-2" data-name="Layer 2"
+							id="Layer_2" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9.61,18.82l5.91-6.53a.42.42,0,0,1,.61,0l3.51,3.45a.44.44,0,0,0,.51.07l4.69-2.6a.43.43,0,0,1,.52.66L19.41,20.4a.43.43,0,0,1-.61,0l-3.52-3.48a.42.42,0,0,0-.5-.07l-4.65,2.6A.42.42,0,0,1,9.61,18.82Z" />
+							<path
+								d="M8.05,34a2.27,2.27,0,0,1-2.26-2.26V27A15.22,15.22,0,0,1,1,15.94C1,7.29,8.42.25,17.5.25S34,7.29,34,15.94,26.58,31.63,17.5,31.63a17.09,17.09,0,0,1-4-.48L9.2,33.67A2.24,2.24,0,0,1,8.05,34ZM17.5,2.75c-7.7,0-14,5.92-14,13.19a12.74,12.74,0,0,0,4.06,9.29,2.24,2.24,0,0,1,.7,1.63v4.45l4-2.36A2.22,2.22,0,0,1,14,28.7a14.88,14.88,0,0,0,3.52.43c7.7,0,14-5.92,14-13.19S25.2,2.75,17.5,2.75ZM5.87,27h0Z" />
+						</svg>Messages
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link p-0 ps-3 text-dark" href="#">
+						<?xml version="1.0" ?><svg width="40px" height="40px" class="py-2" viewBox="0 0 512 512"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z" />
+						</svg>Notifications
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link p-0 ps-3 text-dark" href="#">
+						<?xml version="1.0" ?><svg data-name="Layer 1" id="Layer_1" width="40px" height="40px"
+							class="py-2" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+							<title />
+							<path
+								d="M27.2,8.22H23.78V5.42A3.42,3.42,0,0,0,20.36,2H5.42A3.42,3.42,0,0,0,2,5.42V20.36a3.42,3.42,0,0,0,3.42,3.42h2.8V27.2A2.81,2.81,0,0,0,11,30H27.2A2.81,2.81,0,0,0,30,27.2V11A2.81,2.81,0,0,0,27.2,8.22ZM5.42,21.91a1.55,1.55,0,0,1-1.55-1.55V5.42A1.54,1.54,0,0,1,5.42,3.87H20.36a1.55,1.55,0,0,1,1.55,1.55v2.8H11A2.81,2.81,0,0,0,8.22,11V21.91ZM28.13,27.2a.93.93,0,0,1-.93.93H11a.93.93,0,0,1-.93-.93V11a.93.93,0,0,1,.93-.93H27.2a.93.93,0,0,1,.93.93Z" />
+							<path
+								d="M24.09,18.18H20v-4a.93.93,0,1,0-1.86,0v4h-4a.93.93,0,0,0,0,1.86h4v4.05a.93.93,0,1,0,1.86,0V20h4.05a.93.93,0,1,0,0-1.86Z" />
+						</svg>Create
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link p-0 ps-3 text-dark" href="#"><img class="pfp p-2" src="./Images/profile.jpg"
+							width="40px" class="p-2" title="Profile" />Profile</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link p-0 ps-3 text-dark" href="#"><svg width="40px" height="40px"
+							viewBox="-12 -12 48.00 48.00" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+							<g id="SVGRepo_iconCarrier">
+								<path
+									d="M1 12C1 11.4477 1.44772 11 2 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H2C1.44772 13 1 12.5523 1 12Z"
+									fill="#0F0F0F"></path>
+								<path
+									d="M1 4C1 3.44772 1.44772 3 2 3H22C22.5523 3 23 3.44772 23 4C23 4.55228 22.5523 5 22 5H2C1.44772 5 1 4.55228 1 4Z"
+									fill="#0F0F0F"></path>
+								<path
+									d="M1 20C1 19.4477 1.44772 19 2 19H22C22.5523 19 23 19.4477 23 20C23 20.5523 22.5523 21 22 21H2C1.44772 21 1 20.5523 1 20Z"
+									fill="#0F0F0F"></path>
+							</g>
+						</svg>More</a>
+				</li>
+			</ul>
+		</nav>
+		<section id="mid_section" class="d-flex flex-column justify-content-between">
+			<div id="top" class="my-5 d-flex justify-content-start">
+				<div class="card story_card border-0 text-center me-2">
+					<div class="picFrame yes rounded-circle">
+						<div class="story_pic rounded-circle"></div>
+					</div>
+					<p>UserName</p>
+				</div>
+				<div class="card story_card border-0 text-center me-2">
+					<div class="picFrame rounded-circle">
+						<div class="story_pic rounded-circle"></div>
+					</div>
+					<p>UserName</p>
+				</div>
+				<div class="card story_card border-0 text-center me-2">
+					<div class="picFrame yes rounded-circle">
+						<div class="story_pic rounded-circle"></div>
+					</div>
+					<p>UserName</p>
+				</div>
+				<div class="card story_card border-0 text-center me-2">
+					<div class="picFrame yes rounded-circle">
+						<div class="story_pic rounded-circle"></div>
+					</div>
+					<p>UserName</p>
+				</div>
+				<div class="card story_card border-0 text-center me-2">
+					<div class="picFrame yes rounded-circle">
+						<div class="story_pic rounded-circle"></div>
+					</div>
+					<p>UserName</p>
+				</div>
+				<div class="card story_card border-0 text-center me-2">
+					<div class="picFrame rounded-circle">
+						<div class="story_pic rounded-circle"></div>
+					</div>
+					<p>UserName</p>
+				</div>
+				<div class="card story_card border-0 text-center me-2">
+					<div class="picFrame yes rounded-circle">
+						<div class="story_pic rounded-circle"></div>
+					</div>
+					<p>UserName</p>
+				</div>
+				<div class="card story_card border-0 text-center me-2">
+					<div class="picFrame rounded-circle">
+						<div class="story_pic rounded-circle"></div>
+					</div>
+					<p>UserName</p>
+				</div>
+				<div class="card story_card border-0 text-center me-2">
+					<div class="picFrame yes rounded-circle">
+						<div class="story_pic rounded-circle"></div>
+					</div>
+					<p>UserName</p>
+				</div>
+			</div>
+			<div id="content" class="d-flex flex-column align-items-center">
+				<article class="post px-5 pb-2 card border-0 border-bottom">
+					<div class="title d-flex justify-content-between align-items-center">
+						<div class="left d-flex justify-content-between align-items-center">
+							<!-- <div class="picture"> -->
+							<div class="picFrame yes rounded-circle">
+								<div class="story_pic rounded-circle"></div>
+							</div>
+							<!-- </div> -->
+							<strong class="mx-2">UserName</strong>
+							<svg width="86px" height="86px" viewBox="0 0 24.00 24.00" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+								<g id="SVGRepo_iconCarrier">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M9.5924 3.20027C9.34888 3.4078 9.22711 3.51158 9.09706 3.59874C8.79896 3.79854 8.46417 3.93721 8.1121 4.00672C7.95851 4.03705 7.79903 4.04977 7.48008 4.07522C6.6787 4.13918 6.278 4.17115 5.94371 4.28923C5.17051 4.56233 4.56233 5.17051 4.28923 5.94371C4.17115 6.278 4.13918 6.6787 4.07522 7.48008C4.04977 7.79903 4.03705 7.95851 4.00672 8.1121C3.93721 8.46417 3.79854 8.79896 3.59874 9.09706C3.51158 9.22711 3.40781 9.34887 3.20027 9.5924C2.67883 10.2043 2.4181 10.5102 2.26522 10.8301C1.91159 11.57 1.91159 12.43 2.26522 13.1699C2.41811 13.4898 2.67883 13.7957 3.20027 14.4076C3.40778 14.6511 3.51158 14.7729 3.59874 14.9029C3.79854 15.201 3.93721 15.5358 4.00672 15.8879C4.03705 16.0415 4.04977 16.201 4.07522 16.5199C4.13918 17.3213 4.17115 17.722 4.28923 18.0563C4.56233 18.8295 5.17051 19.4377 5.94371 19.7108C6.278 19.8288 6.6787 19.8608 7.48008 19.9248C7.79903 19.9502 7.95851 19.963 8.1121 19.9933C8.46417 20.0628 8.79896 20.2015 9.09706 20.4013C9.22711 20.4884 9.34887 20.5922 9.5924 20.7997C10.2043 21.3212 10.5102 21.5819 10.8301 21.7348C11.57 22.0884 12.43 22.0884 13.1699 21.7348C13.4898 21.5819 13.7957 21.3212 14.4076 20.7997C14.6511 20.5922 14.7729 20.4884 14.9029 20.4013C15.201 20.2015 15.5358 20.0628 15.8879 19.9933C16.0415 19.963 16.201 19.9502 16.5199 19.9248C17.3213 19.8608 17.722 19.8288 18.0563 19.7108C18.8295 19.4377 19.4377 18.8295 19.7108 18.0563C19.8288 17.722 19.8608 17.3213 19.9248 16.5199C19.9502 16.201 19.963 16.0415 19.9933 15.8879C20.0628 15.5358 20.2015 15.201 20.4013 14.9029C20.4884 14.7729 20.5922 14.6511 20.7997 14.4076C21.3212 13.7957 21.5819 13.4898 21.7348 13.1699C22.0884 12.43 22.0884 11.57 21.7348 10.8301C21.5819 10.5102 21.3212 10.2043 20.7997 9.5924C20.5922 9.34887 20.4884 9.22711 20.4013 9.09706C20.2015 8.79896 20.0628 8.46417 19.9933 8.1121C19.963 7.95851 19.9502 7.79903 19.9248 7.48008C19.8608 6.6787 19.8288 6.278 19.7108 5.94371C19.4377 5.17051 18.8295 4.56233 18.0563 4.28923C17.722 4.17115 17.3213 4.13918 16.5199 4.07522C16.201 4.04977 16.0415 4.03705 15.8879 4.00672C15.5358 3.93721 15.201 3.79854 14.9029 3.59874C14.7729 3.51158 14.6511 3.40781 14.4076 3.20027C13.7957 2.67883 13.4898 2.41811 13.1699 2.26522C12.43 1.91159 11.57 1.91159 10.8301 2.26522C10.5102 2.4181 10.2043 2.67883 9.5924 3.20027ZM16.3735 9.86314C16.6913 9.5453 16.6913 9.03 16.3735 8.71216C16.0557 8.39433 15.5403 8.39433 15.2225 8.71216L10.3723 13.5624L8.77746 11.9676C8.45963 11.6498 7.94432 11.6498 7.62649 11.9676C7.30866 12.2854 7.30866 12.8007 7.62649 13.1186L9.79678 15.2889C10.1146 15.6067 10.6299 15.6067 10.9478 15.2889L16.3735 9.86314Z"
+										fill="#1080d5"></path>
+								</g>
+							</svg>
+							<p class="mt-3 mx-2">•</p>
+							<div class="timestamp text-muted">1h</div>
+						</div>
+						<button class="more border-0"><i class="fa-solid fa-ellipsis"></i></button>
+					</div>
+					<img src="https://pbs.twimg.com/media/GMfSxBubQAAxBPP?format=jpg&name=4096x4096">
+					<div class="description">
+						<div class="reactions d-flex justify-content-between align-items-center">
+							<div class="first">
+								<?xml version="1.0" ?><svg width="40px" height="40px" class="py-2" viewBox="0 0 512 512"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z" />
+								</svg>
+								<svg width="40px" height="40px" viewBox="-5.04 -5.04 34.08 34.08" fill="none"
+									xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)">
+									<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+									<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+									<g id="SVGRepo_iconCarrier">
+										<g id="Communication / Chat_Circle">
+											<path id="Vector"
+												d="M7.50977 19.8018C8.83126 20.5639 10.3645 21 11.9996 21C16.9702 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 13.6351 3.43604 15.1684 4.19819 16.4899L4.20114 16.495C4.27448 16.6221 4.31146 16.6863 4.32821 16.7469C4.34401 16.804 4.34842 16.8554 4.34437 16.9146C4.34003 16.9781 4.3186 17.044 4.27468 17.1758L3.50586 19.4823L3.50489 19.4853C3.34268 19.9719 3.26157 20.2152 3.31938 20.3774C3.36979 20.5187 3.48169 20.6303 3.62305 20.6807C3.78482 20.7384 4.02705 20.6577 4.51155 20.4962L4.51758 20.4939L6.82405 19.7251C6.95537 19.6813 7.02214 19.6591 7.08559 19.6548C7.14475 19.6507 7.19578 19.6561 7.25293 19.6719C7.31368 19.6887 7.37783 19.7257 7.50563 19.7994L7.50977 19.8018Z"
+												stroke="#000000" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round"></path>
+										</g>
+									</g>
+								</svg>
+								<svg width="40px" height="40px" viewBox="-4.56 -4.56 33.12 33.12" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+									<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+									<g id="SVGRepo_iconCarrier">
+										<path d="M20 4L3 11L10 14M20 4L13 21L10 14M20 4L10 14" stroke="#000000"
+											stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</g>
+								</svg>
+							</div>
+							<i class="fa-regular fa-bookmark fs-4 pe-2" style="color: #000000;"></i>
+						</div>
+						<p class="likes"><strong>741,368 likes</strong></p>
+						<p class="comments">
+							<span><strong>lewishamilton</strong></span>
+							<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, expedita.</span>
+						</p>
+						<p class="translate fw-bold fs-6">See translation</p>
+						<p class="view_comments text-secondary">View all 13,384 comments</p>
+						<p class="add_comment fs-5">Add a comment...</p>
+					</div>
+				</article>
+				<article id="suggestions">
+					<div class="card suggestion_card"></div>
+				</article>
+				<article class="post px-5 pb-2 card border-0 border-bottom">
+					<div class="title d-flex justify-content-between align-items-center">
+						<div class="left d-flex justify-content-between align-items-center">
+							<!-- <div class="picture"> -->
+							<div class="picFrame yes rounded-circle">
+								<div class="story_pic rounded-circle"></div>
+							</div>
+							<!-- </div> -->
+							<strong class="mx-2">UserName</strong>
+							<svg width="86px" height="86px" viewBox="0 0 24.00 24.00" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+								<g id="SVGRepo_iconCarrier">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M9.5924 3.20027C9.34888 3.4078 9.22711 3.51158 9.09706 3.59874C8.79896 3.79854 8.46417 3.93721 8.1121 4.00672C7.95851 4.03705 7.79903 4.04977 7.48008 4.07522C6.6787 4.13918 6.278 4.17115 5.94371 4.28923C5.17051 4.56233 4.56233 5.17051 4.28923 5.94371C4.17115 6.278 4.13918 6.6787 4.07522 7.48008C4.04977 7.79903 4.03705 7.95851 4.00672 8.1121C3.93721 8.46417 3.79854 8.79896 3.59874 9.09706C3.51158 9.22711 3.40781 9.34887 3.20027 9.5924C2.67883 10.2043 2.4181 10.5102 2.26522 10.8301C1.91159 11.57 1.91159 12.43 2.26522 13.1699C2.41811 13.4898 2.67883 13.7957 3.20027 14.4076C3.40778 14.6511 3.51158 14.7729 3.59874 14.9029C3.79854 15.201 3.93721 15.5358 4.00672 15.8879C4.03705 16.0415 4.04977 16.201 4.07522 16.5199C4.13918 17.3213 4.17115 17.722 4.28923 18.0563C4.56233 18.8295 5.17051 19.4377 5.94371 19.7108C6.278 19.8288 6.6787 19.8608 7.48008 19.9248C7.79903 19.9502 7.95851 19.963 8.1121 19.9933C8.46417 20.0628 8.79896 20.2015 9.09706 20.4013C9.22711 20.4884 9.34887 20.5922 9.5924 20.7997C10.2043 21.3212 10.5102 21.5819 10.8301 21.7348C11.57 22.0884 12.43 22.0884 13.1699 21.7348C13.4898 21.5819 13.7957 21.3212 14.4076 20.7997C14.6511 20.5922 14.7729 20.4884 14.9029 20.4013C15.201 20.2015 15.5358 20.0628 15.8879 19.9933C16.0415 19.963 16.201 19.9502 16.5199 19.9248C17.3213 19.8608 17.722 19.8288 18.0563 19.7108C18.8295 19.4377 19.4377 18.8295 19.7108 18.0563C19.8288 17.722 19.8608 17.3213 19.9248 16.5199C19.9502 16.201 19.963 16.0415 19.9933 15.8879C20.0628 15.5358 20.2015 15.201 20.4013 14.9029C20.4884 14.7729 20.5922 14.6511 20.7997 14.4076C21.3212 13.7957 21.5819 13.4898 21.7348 13.1699C22.0884 12.43 22.0884 11.57 21.7348 10.8301C21.5819 10.5102 21.3212 10.2043 20.7997 9.5924C20.5922 9.34887 20.4884 9.22711 20.4013 9.09706C20.2015 8.79896 20.0628 8.46417 19.9933 8.1121C19.963 7.95851 19.9502 7.79903 19.9248 7.48008C19.8608 6.6787 19.8288 6.278 19.7108 5.94371C19.4377 5.17051 18.8295 4.56233 18.0563 4.28923C17.722 4.17115 17.3213 4.13918 16.5199 4.07522C16.201 4.04977 16.0415 4.03705 15.8879 4.00672C15.5358 3.93721 15.201 3.79854 14.9029 3.59874C14.7729 3.51158 14.6511 3.40781 14.4076 3.20027C13.7957 2.67883 13.4898 2.41811 13.1699 2.26522C12.43 1.91159 11.57 1.91159 10.8301 2.26522C10.5102 2.4181 10.2043 2.67883 9.5924 3.20027ZM16.3735 9.86314C16.6913 9.5453 16.6913 9.03 16.3735 8.71216C16.0557 8.39433 15.5403 8.39433 15.2225 8.71216L10.3723 13.5624L8.77746 11.9676C8.45963 11.6498 7.94432 11.6498 7.62649 11.9676C7.30866 12.2854 7.30866 12.8007 7.62649 13.1186L9.79678 15.2889C10.1146 15.6067 10.6299 15.6067 10.9478 15.2889L16.3735 9.86314Z"
+										fill="#1080d5"></path>
+								</g>
+							</svg>
+							<p class="mt-3 mx-2">•</p>
+							<div class="timestamp text-muted">1h</div>
+						</div>
+						<button class="more border-0"><i class="fa-solid fa-ellipsis"></i></button>
+					</div>
+					<img src="https://sp-uploads.s3.amazonaws.com/uploads/services/2282620/20211005171845_615c88f574611_string_theory_for_dummies___pdfdrive__page0.png">
+					<div class="description">
+						<div class="reactions d-flex justify-content-between align-items-center">
+							<div class="first">
+								<?xml version="1.0" ?><svg width="40px" height="40px" class="py-2" viewBox="0 0 512 512"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z" />
+								</svg>
+								<svg width="40px" height="40px" viewBox="-5.04 -5.04 34.08 34.08" fill="none"
+									xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)">
+									<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+									<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+									<g id="SVGRepo_iconCarrier">
+										<g id="Communication / Chat_Circle">
+											<path id="Vector"
+												d="M7.50977 19.8018C8.83126 20.5639 10.3645 21 11.9996 21C16.9702 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 13.6351 3.43604 15.1684 4.19819 16.4899L4.20114 16.495C4.27448 16.6221 4.31146 16.6863 4.32821 16.7469C4.34401 16.804 4.34842 16.8554 4.34437 16.9146C4.34003 16.9781 4.3186 17.044 4.27468 17.1758L3.50586 19.4823L3.50489 19.4853C3.34268 19.9719 3.26157 20.2152 3.31938 20.3774C3.36979 20.5187 3.48169 20.6303 3.62305 20.6807C3.78482 20.7384 4.02705 20.6577 4.51155 20.4962L4.51758 20.4939L6.82405 19.7251C6.95537 19.6813 7.02214 19.6591 7.08559 19.6548C7.14475 19.6507 7.19578 19.6561 7.25293 19.6719C7.31368 19.6887 7.37783 19.7257 7.50563 19.7994L7.50977 19.8018Z"
+												stroke="#000000" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round"></path>
+										</g>
+									</g>
+								</svg>
+								<svg width="40px" height="40px" viewBox="-4.56 -4.56 33.12 33.12" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+									<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+									<g id="SVGRepo_iconCarrier">
+										<path d="M20 4L3 11L10 14M20 4L13 21L10 14M20 4L10 14" stroke="#000000"
+											stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</g>
+								</svg>
+							</div>
+							<i class="fa-regular fa-bookmark fs-4 pe-2" style="color: #000000;"></i>
+						</div>
+						<p class="likes"><strong>741,368 likes</strong></p>
+						<p class="comments">
+							<span><strong>lewishamilton</strong></span>
+							<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, expedita.</span>
+						</p>
+						<p class="translate fw-bold fs-6">See translation</p>
+						<p class="view_comments text-secondary">View all 13,384 comments</p>
+						<p class="add_comment fs-5">Add a comment...</p>
+					</div>
+				</article>
+				<article class="post px-5 pb-2 card border-0 border-bottom">
+					<div class="title d-flex justify-content-between align-items-center">
+						<div class="left d-flex justify-content-between align-items-center">
+							<!-- <div class="picture"> -->
+							<div class="picFrame yes rounded-circle">
+								<div class="story_pic rounded-circle"></div>
+							</div>
+							<!-- </div> -->
+							<strong class="mx-2">UserName</strong>
+							<svg width="86px" height="86px" viewBox="0 0 24.00 24.00" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+								<g id="SVGRepo_iconCarrier">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M9.5924 3.20027C9.34888 3.4078 9.22711 3.51158 9.09706 3.59874C8.79896 3.79854 8.46417 3.93721 8.1121 4.00672C7.95851 4.03705 7.79903 4.04977 7.48008 4.07522C6.6787 4.13918 6.278 4.17115 5.94371 4.28923C5.17051 4.56233 4.56233 5.17051 4.28923 5.94371C4.17115 6.278 4.13918 6.6787 4.07522 7.48008C4.04977 7.79903 4.03705 7.95851 4.00672 8.1121C3.93721 8.46417 3.79854 8.79896 3.59874 9.09706C3.51158 9.22711 3.40781 9.34887 3.20027 9.5924C2.67883 10.2043 2.4181 10.5102 2.26522 10.8301C1.91159 11.57 1.91159 12.43 2.26522 13.1699C2.41811 13.4898 2.67883 13.7957 3.20027 14.4076C3.40778 14.6511 3.51158 14.7729 3.59874 14.9029C3.79854 15.201 3.93721 15.5358 4.00672 15.8879C4.03705 16.0415 4.04977 16.201 4.07522 16.5199C4.13918 17.3213 4.17115 17.722 4.28923 18.0563C4.56233 18.8295 5.17051 19.4377 5.94371 19.7108C6.278 19.8288 6.6787 19.8608 7.48008 19.9248C7.79903 19.9502 7.95851 19.963 8.1121 19.9933C8.46417 20.0628 8.79896 20.2015 9.09706 20.4013C9.22711 20.4884 9.34887 20.5922 9.5924 20.7997C10.2043 21.3212 10.5102 21.5819 10.8301 21.7348C11.57 22.0884 12.43 22.0884 13.1699 21.7348C13.4898 21.5819 13.7957 21.3212 14.4076 20.7997C14.6511 20.5922 14.7729 20.4884 14.9029 20.4013C15.201 20.2015 15.5358 20.0628 15.8879 19.9933C16.0415 19.963 16.201 19.9502 16.5199 19.9248C17.3213 19.8608 17.722 19.8288 18.0563 19.7108C18.8295 19.4377 19.4377 18.8295 19.7108 18.0563C19.8288 17.722 19.8608 17.3213 19.9248 16.5199C19.9502 16.201 19.963 16.0415 19.9933 15.8879C20.0628 15.5358 20.2015 15.201 20.4013 14.9029C20.4884 14.7729 20.5922 14.6511 20.7997 14.4076C21.3212 13.7957 21.5819 13.4898 21.7348 13.1699C22.0884 12.43 22.0884 11.57 21.7348 10.8301C21.5819 10.5102 21.3212 10.2043 20.7997 9.5924C20.5922 9.34887 20.4884 9.22711 20.4013 9.09706C20.2015 8.79896 20.0628 8.46417 19.9933 8.1121C19.963 7.95851 19.9502 7.79903 19.9248 7.48008C19.8608 6.6787 19.8288 6.278 19.7108 5.94371C19.4377 5.17051 18.8295 4.56233 18.0563 4.28923C17.722 4.17115 17.3213 4.13918 16.5199 4.07522C16.201 4.04977 16.0415 4.03705 15.8879 4.00672C15.5358 3.93721 15.201 3.79854 14.9029 3.59874C14.7729 3.51158 14.6511 3.40781 14.4076 3.20027C13.7957 2.67883 13.4898 2.41811 13.1699 2.26522C12.43 1.91159 11.57 1.91159 10.8301 2.26522C10.5102 2.4181 10.2043 2.67883 9.5924 3.20027ZM16.3735 9.86314C16.6913 9.5453 16.6913 9.03 16.3735 8.71216C16.0557 8.39433 15.5403 8.39433 15.2225 8.71216L10.3723 13.5624L8.77746 11.9676C8.45963 11.6498 7.94432 11.6498 7.62649 11.9676C7.30866 12.2854 7.30866 12.8007 7.62649 13.1186L9.79678 15.2889C10.1146 15.6067 10.6299 15.6067 10.9478 15.2889L16.3735 9.86314Z"
+										fill="#1080d5"></path>
+								</g>
+							</svg>
+							<p class="mt-3 mx-2">•</p>
+							<div class="timestamp text-muted">1h</div>
+						</div>
+						<button class="more border-0"><i class="fa-solid fa-ellipsis"></i></button>
+					</div>
+					<img src="https://images.penews.com/im-845211/?width=749&height=499">
+					<div class="description">
+						<div class="reactions d-flex justify-content-between align-items-center">
+							<div class="first">
+								<?xml version="1.0" ?><svg width="40px" height="40px" class="py-2" viewBox="0 0 512 512"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z" />
+								</svg>
+								<svg width="40px" height="40px" viewBox="-5.04 -5.04 34.08 34.08" fill="none"
+									xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)">
+									<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+									<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+									<g id="SVGRepo_iconCarrier">
+										<g id="Communication / Chat_Circle">
+											<path id="Vector"
+												d="M7.50977 19.8018C8.83126 20.5639 10.3645 21 11.9996 21C16.9702 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 13.6351 3.43604 15.1684 4.19819 16.4899L4.20114 16.495C4.27448 16.6221 4.31146 16.6863 4.32821 16.7469C4.34401 16.804 4.34842 16.8554 4.34437 16.9146C4.34003 16.9781 4.3186 17.044 4.27468 17.1758L3.50586 19.4823L3.50489 19.4853C3.34268 19.9719 3.26157 20.2152 3.31938 20.3774C3.36979 20.5187 3.48169 20.6303 3.62305 20.6807C3.78482 20.7384 4.02705 20.6577 4.51155 20.4962L4.51758 20.4939L6.82405 19.7251C6.95537 19.6813 7.02214 19.6591 7.08559 19.6548C7.14475 19.6507 7.19578 19.6561 7.25293 19.6719C7.31368 19.6887 7.37783 19.7257 7.50563 19.7994L7.50977 19.8018Z"
+												stroke="#000000" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round"></path>
+										</g>
+									</g>
+								</svg>
+								<svg width="40px" height="40px" viewBox="-4.56 -4.56 33.12 33.12" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+									<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+									<g id="SVGRepo_iconCarrier">
+										<path d="M20 4L3 11L10 14M20 4L13 21L10 14M20 4L10 14" stroke="#000000"
+											stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</g>
+								</svg>
+							</div>
+							<i class="fa-regular fa-bookmark fs-4 pe-2" style="color: #000000;"></i>
+						</div>
+						<p class="likes"><strong>741,368 likes</strong></p>
+						<p class="comments">
+							<span><strong>lewishamilton</strong></span>
+							<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, expedita.</span>
+						</p>
+						<p class="translate fw-bold fs-6">See translation</p>
+						<p class="view_comments text-secondary">View all 13,384 comments</p>
+						<p class="add_comment fs-5">Add a comment...</p>
+					</div>
+				</article>
+				<article class="post card"></article>
+			</div>
+		</section>
+		<aside>
+			<section>
+				<div class="profile_card"></div>
+				<ul class="nav flex-column">
+					<li class="nav-item card aside_card" id="main_card">
+
+					</li>
+					<p class="text-muted"><strong>Suggested for you</strong></p>
+					<li class="nav-item card aside_card sub_cards">
+
+					</li>
+					<li class="nav-item card aside_card sub_cards">
+
+					</li>
+					<li class="nav-item card aside_card sub_cards">
+
+					</li>
+				</ul>
+			</section>
+			<footer></footer>
+		</aside>
+	</main>
+</body>
+
+</html>
